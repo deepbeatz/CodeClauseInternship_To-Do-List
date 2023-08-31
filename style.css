@@ -51,15 +51,40 @@ input {
 }
 
 button {
+    transition: all 0.3s ease-in-out;
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff6d5d;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    background: hsla(46, 95%, 56%, 1);
+    background: linear-gradient(30deg, hsla(46, 95%, 56%, 1) 20%, hsla(350, 97%, 65%, 1) 100%);
+    background: -moz-linear-gradient(30deg, hsla(46, 95%, 56%, 1) 20%, hsla(350, 97%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(30deg, hsla(46, 95%, 56%, 1) 20%, hsla(350, 97%, 65%, 1) 100%);
 }
+
+button:hover{
+    color: #000000;
+    font-weight: 700;
+    transform: scale(1.05);
+    /* background: linear-gradient(30deg, hsla(46, 95%, 56%, 1) 20%, hsla(350, 97%, 65%, 1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; */
+}
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
 
 ul li{
     list-style: none;
